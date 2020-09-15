@@ -3,4 +3,24 @@
 body{
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    background-image: url(../img/back.png);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+// reset
+
+input,
+button,
+textarea {
+    &:focus {
+        outline: none;
+    }
+}
+
+
+// wrapper
+.wrapper {
+    background-color: #ffffff;
+    padding: 15px;
 }

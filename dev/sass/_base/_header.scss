@@ -1,0 +1,160 @@
+#header {
+    .chess {
+        // top
+        &-header_top {
+            background-color: $dark-black;
+            padding: 10px 0;
+        }
+
+        &-social_networks {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+             li{
+                 margin: 0 6px;
+
+                 a {
+                     text-decoration: none;
+                 }
+             }
+        }
+
+        &-search_box {
+            position: relative;
+            width: 187px;
+            height: 25px;
+            margin-right: 25px;
+            input {
+                width: 100%;
+                height: 100%;
+                background-color: $light-black;
+                border-radius: 5px;
+                border: none;
+                padding-right: 40px;
+                text-indent: 10px;
+                color: rgba(255,255,255, .5);
+            }
+
+            button {
+                background-color: transparent;
+                border:none;
+                position: absolute;
+                top: 50%;
+                @include transform(translateY(-50%));
+                right: 4px;
+            }
+        }
+
+
+
+        // bottom
+        &-header_bottom {
+            background-color: $light-black;
+            padding:9px 0;
+
+            .navbar-brand {
+                img {
+                    height: 100px;
+                }
+            }
+        }
+    }
+
+
+    .language-dropdown {
+        background-color: transparent;
+        color: rgba(255,255,255, .5);
+        font-size: 16px;
+        border: none;
+
+        & + .dropdown-menu {
+            min-width: auto;
+        }
+
+        &::after {
+            content: url(../img/icons/down-arrow.png);
+            border:none;
+            vertical-align: 2px;
+        }
+    }
+}
+
+.navbar-nav {
+    // display: block;
+    z-index: 999999;
+  }
+  .navbar-nav li {
+    display: inline-block;
+    position: relative;
+  }
+  .navbar-nav li.dropdown:hover > .submenu {
+    display: block;
+  }
+  .navbar-nav li a {
+    display: block;
+    padding: 8px 4px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    @include transition(.25s ease-in-out)
+  }
+  .navbar-nav li.dropdown > a::after {
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 8px;
+    font-size: 10px;
+  }
+  .navbar-nav li a::before {
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 8px;
+  }
+
+  .navbar-nav li a:hover {
+    border-bottom-color: $theme;
+  }
+
+  .navbar-nav li a:hover {
+    background: transparent;
+    color: $theme;
+  }
+  
+  .navbar-nav .submenu {
+    display: none;
+  }
+  .submenu {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 0px;
+    list-style-type: none;
+    display: block;
+    width: 200px;
+    z-index: 9;
+  }
+  .submenu li {
+    display: block;
+  }
+  .submenu li a {
+    display: block;
+    background-color: #fff;
+    color: $dark-black;
+    padding: 8px 6px;
+    border-bottom: 1px solid $theme;
+  }
+  .submenu li a:hover {
+    background-color: #fff;
+    border-bottom-color: $theme;
+  }
+  .navbar-nav .submenu > li.dropdown:hover > .submenu {
+    display: block;
+  }
+  
+  .navbar-nav .submenu .submenu {
+    position: absolute;
+    left: 200px;
+    top: 0px;
+  }
+
+  
