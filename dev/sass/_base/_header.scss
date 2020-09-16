@@ -125,27 +125,29 @@
   }
   .submenu {
     margin: 0px;
-    padding: 0px;
+    padding: 10px 0;
     position: absolute;
     left: 0px;
     list-style-type: none;
     display: block;
     width: 200px;
     z-index: 9;
+    background-color: $dark-black;
   }
   .submenu li {
     display: block;
   }
   .submenu li a {
     display: block;
-    background-color: #fff;
-    color: $dark-black;
-    padding: 8px 6px;
-    border-bottom: 1px solid $theme;
+    background-color: transparent;
+    color: #fff;
+    padding: 2px 15px;
+    border-bottom: 1px solid transparent;
   }
   .submenu li a:hover {
-    background-color: #fff;
-    border-bottom-color: $theme;
+    color: $theme;
+    background-color: $dark-black;
+    border-bottom-color: transparent;
   }
   .navbar-nav .submenu > li.dropdown:hover > .submenu {
     display: block;
