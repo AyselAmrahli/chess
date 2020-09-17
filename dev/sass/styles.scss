@@ -24,7 +24,11 @@ textarea {
 // wrapper
 .wrapper {
     background-color: #ffffff;
-    padding: 15px;
+    padding: 15px 0;
+}
+
+.section {
+    padding: 0 15px;
 }
 
 // section title
@@ -54,22 +58,7 @@ textarea {
 .section-latest_news {
 
     .chess-news_item {
-        position: relative;
-        height: 281px;
-        width: 100%;
-        @include transition(.25s ease-in-out);
-        
 
-        &::after {
-            width: 100%;
-            height: 100%;
-            z-index: 5;
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: rgba(0,0,0, .48);
-        }
         img {
             width: 100%;
             height: 100%;
@@ -83,6 +72,110 @@ textarea {
             bottom: 10px;
             left: 20px;
             z-index: 10;
+            @include transition(.25s ease-in-out);
+        }
+  
+        a {
+            position: relative;
+            display: block;
+            height: 281px;
+            width: 100%;
+            @include transition(.25s ease-in-out);
+
+            &::after {
+                width: 100%;
+                height: 100%;
+                z-index: 5;
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(0,0,0, .48);
+                @include transition(.25s ease-in-out);
+            }
+
+
+            &:hover {
+                &::after {
+                    background-color: transparent;
+                }
+
+                p {
+                    opacity: 0;
+                }
+            }
+        }
+        
+    }
+}
+
+
+.section-chess_players {
+    .chess-nav {
+        .nav-link {
+            width: 34%;
+            border:none;
+            border-radius: 0;
+
+
+            span {
+                font-size: 16px;
+            }
+        }
+
+        .back-yellow {
+            background-color: $theme;
+
+            span {
+                color: $light-black;
+            }
+        }
+
+        .back-dark {
+            background-color: $light-black;
+
+            span {
+                color: #ffffff;
+            }
+        }
+
+    }
+
+    .chess-tab_content {
+        background-image: url(../img/back2.png);
+
+        #chessCarousel {
+            .carousel-item {
+                img.player-pic {
+                    width: 100px;
+                    height: 102px;
+                    object-fit: cover;
+                    float: left;
+                }
+
+                .chess-carousel_caption {
+                    .player-name {
+                        color: $light-black;
+                        font-size: 16px;
+                    }
+
+                    .player-rank {
+                        color: $light-black;
+                        span {
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                opacity: 1;
+                img {
+                    height: 50px;
+                }
+            }
         }
     }
 }
