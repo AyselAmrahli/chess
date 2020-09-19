@@ -78,15 +78,25 @@
             vertical-align: 2px;
         }
     }
+    
 }
 
 .navbar-nav {
     // display: block;
     z-index: 999999;
   }
+
+  .nav-live .nav-link{
+    color: $theme !important;
+    border:none!important;
+    img {
+      margin-right: 5px;
+    }
+  }
   .navbar-nav li {
     display: inline-block;
     position: relative;
+    margin-left: 10px;
   }
   .navbar-nav li.dropdown:hover > .submenu {
     display: block;
