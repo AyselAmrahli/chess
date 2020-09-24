@@ -357,3 +357,46 @@ textarea {
         }
     }
 }
+
+
+.breadcrumb {
+    background-color: transparent;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &-item {
+         a {
+            color: #a6a6a6;
+            text-decoration: none;
+         }
+
+         &.active {
+            color: $dark-black;
+            font-weight: 500;
+         }
+    }
+}
+
+.pagination {
+    margin: 0;
+    padding: 20px 0;
+    .page-item {
+        .page-link {
+            border: none;
+            color: $light-black;
+            padding: 8px;
+            &:hover {
+                background-color: transparent;
+                color: $theme;
+            }
+        }
+
+        &.active  {
+            .page-link {
+                color: $theme;
+                background-color: transparent;
+            }
+        }
+    }
+}
