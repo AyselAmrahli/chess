@@ -1,0 +1,117 @@
+{{#> layouts/default title="Contact" }}
+
+
+{{#*inline "body"}}
+
+
+
+    <!-- latest news inner -->
+    <section class="section section-contact pb-4">
+
+        <!--- breadcrump --->
+        <div class="container-fluid np">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contacts</li>
+                </ol>
+            </nav>
+        </div>
+        <!--- ./breadcrump --->
+
+        <!--- map --->
+        <section class="contact-map mb-5">
+            <div id="contact-map"></div>
+        </section>
+        <!--- ./map --->
+
+        <!--- address --->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <address>
+                        <label for="Address">Address:</label>
+                        <div class="d-flex align-items-center">
+                            <img src="assets/img/icons/pin.png" alt="icon" role="icon">
+                            <p>Bakhixanov st. 15/16</p>
+                        </div>
+                    </address>
+
+                    <address>
+                        <label for="Phones">Phones:</label>
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="assets/img/icons/telephone.png" alt="icon" role="icon">
+                            <p>+994 12 450 90 09</p>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <img src="assets/img/icons/call.png" alt="icon" role="icon">
+                            <p>+994 51 500 02 02</p>
+                        </div>
+                    </address>
+
+                    <address>
+                        <label for="E-mail">E-mail:</label>
+                        <div class="d-flex align-items-center">
+                            <img src="assets/img/icons/email.png" alt="icon" role="icon">
+                            <p> info@fide.az</p>
+                        </div>
+                    </address>
+                </div>
+                <div class="col-md-9">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <address>
+                                <label for="E-mail">Message us</label>
+                                <div class="d-flex align-items-center">
+                                    <p>Email  us with any questions or inquiries or use our contact data.</p>
+                                </div>
+                            </address>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="text"  placeholder="Name" class="form-control form-control_custom">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="text" placeholder="E-mail" class="form-control form-control_custom">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="text" placeholder="Phone" class="form-control form-control_custom">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea cols="30" placeholder="Message" rows="10" class="form-control form-control_custom"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="d-flex">
+                                    <button class="btn btn-theme mr-2">Send</button>
+                                    <button class="btn btn-gray">Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--- ./address --->
+
+
+    </section>
+    <!-- ./latest news inner -->
+
+{{/inline}}
+
+{{/layouts/default}}

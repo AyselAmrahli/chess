@@ -23,6 +23,8 @@
 <title> Project name - News Inner </title>
 
 <!-- injector:css -->
+<link rel="stylesheet" href="assets/css/fancybox.css">
+<link rel="stylesheet" href="assets/css/datepicker.css">
 <link rel="stylesheet" href="assets/css/design.min.css">
 <!-- endinjector -->
 
@@ -39,19 +41,19 @@
                 <ul class="chess-social_networks d-flex align-items-center justify-content-left">
                     <li>
                         <a href="#">
-                            <img src="assets/img/icons/facebook.png" role="icon" alt="facebook">
+                            <img src="assets/img/icons/facebook-theme.svg" role="icon" alt="facebook">
                         </a>
                     </li>
 
                     <li>
                         <a href="#">
-                            <img src="assets/img/icons/twitter.png" role="icon" alt="facebook">
+                            <img src="assets/img/icons/twitter-theme.svg" role="icon" alt="facebook">
                         </a>
                     </li>
 
                     <li>
                         <a href="#">
-                            <img src="assets/img/icons/youtube.png" role="icon" alt="facebook">
+                            <img src="assets/img/icons/youtube-theme.svg" role="icon" alt="facebook">
                         </a>
                     </li>
                 </ul>
@@ -62,7 +64,7 @@
                     <div class="chess-search_box">
                         <input type="text" class="search-box">
                         <button>
-                            <img src="assets/img/icons/search.png" role="icon" alt="search">
+                            <img src="assets/img/icons/search.svg" height="15px" role="icon" alt="search">
                         </button>
                     </div>
 
@@ -88,61 +90,63 @@
                     <img src="assets/img/logo-en.svg" role="logo" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon">
+                        <img height="25px" src="assets/img/icons/menu.svg" alt="icon" role="icon">
+                    </span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="about.html">About us</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="">Media</a>
+                        <a href="" class="nav-link">Media</a>
                         <ul class="submenu">
-                        <li>
-                            <a href="#">Players</a>
-                        </li>      
-                        <li class="dropdown">
-                            <a href="#">Games</a>
-                            <ul class="submenu">
+                            <li>
+                                <a href="#">Players</a>
+                            </li>      
                             <li class="dropdown">
-                                <a href="">jeruh dua</a>
+                                <a href="#">Games</a>
                                 <ul class="submenu">
-                                <li>
-                                    <a href="">mentok satu</a>
-                                </li>
                                 <li class="dropdown">
-                                    <a href="">mentok dua</a>
+                                    <a href="">jeruh dua</a>
+                                    <ul class="submenu">
+                                    <li>
+                                        <a href="">mentok satu</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="">mentok dua</a>
+                                    </li>
+                                    <li>
+                                        <a href="">mentok satu</a>
+                                    </li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    <a href="">mentok satu</a>
+                                    <a href="">jeruh satu</a>
                                 </li>
                                 </ul>
                             </li>
+
                             <li>
-                                <a href="">jeruh satu</a>
-                            </li>
-                            </ul>
-                        </li>
+                                <a href="#">Baku</a>
+                            </li>  
 
-                        <li>
-                            <a href="#">Baku</a>
-                        </li>  
+                            <li>
+                                <a href="#">Subway</a>
+                            </li>  
 
-                        <li>
-                            <a href="#">Subway</a>
-                        </li>  
-
-                        <li>
-                            <a href="#">Nostalji</a>
-                        </li>  
+                            <li>
+                                <a href="#">Nostalji</a>
+                            </li>  
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Chess players</a>
+                        <a class="nav-link" href="team.html">Chess players</a>
                     </li>
 
                     <li class="nav-item">
@@ -150,16 +154,12 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacts</a>
-                    </li>
-
-                    <li class="nav-item ">
-                        <a class="nav-link nav-for-live" href="#">Contacts</a>
+                        <a class="nav-link" href="contact.html">Contacts</a>
                     </li>
 
                     <li class="nav-item nav-live">
-                        <a class="nav-link nav-for-live" href="#">
-                            <img src="assets/img/icons/film.png" alt="film" role="icon">
+                        <a class="nav-link nav-for-live" href="live.html">
+                            <img src="assets/img/icons/live.svg" height="24px" alt="live" role="icon">
                             Live
                         </a>
                     </li>
@@ -299,91 +299,127 @@
 
 <!-- start-FOOTER -->
 <footer id="footer">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-2">
-                <a href="#" class="footer-brand">
-                    <img src="assets/img/logo-footer.png" alt="brand">
-                </a>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2 text-center text-lg-left">
+                    <a href="#" class="footer-brand">
+                        <img src="assets/img/logo-footer.png" alt="brand">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="footer-links">
+                        <li>
+                            <a href="/">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="news.html">
+                                News
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="video.html">
+                                Media
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="team.html">
+                                Raiting
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Download
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Events
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Help
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="team.html">
+                                Players
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Azerbaijan
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Judges and coaches
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                FIDE
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Support
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <div id="footer-map"></div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <ul class="footer-links">
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+           <div class="row">
+                <div class="col-lg-6">
+                    <p class="copyright nm">
+                        &copy; 2020 Azerbaijan Chess Federation. All Rights Reserved.
+                    </p>
+                </div>
+
+            <div class="col-lg-6">
+                <ul class="footer-socials mt-3 mt-md-0 float-md-right">
                     <li>
                         <a href="#">
-                            Home
+                            <img src="assets/img/icons/facebook-gray.svg" alt="facebook">
                         </a>
                     </li>
 
                     <li>
                         <a href="#">
-                            News
+                            <img src="assets/img/icons/twitter-gray.svg" alt="twitter">
                         </a>
                     </li>
 
                     <li>
                         <a href="#">
-                            Media
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Raiting
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Download
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Events
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Help
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Players
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Azerbaijan
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Judges and coaches
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            FIDE
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Support
+                            <img src="assets/img/icons/youtube-gray.svg" alt="twitter">
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4">
-                <div id="footer-map"></div>
-            </div>
+           </div>
         </div>
     </div>
 </footer>
@@ -395,6 +431,9 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAAgzs1wgbRaHBWyTiidXwlLrRip_vyEk&callback"></script>
+<script src="assets/js/libs/fancybox.js"></script>
+<script src="assets/js/libs/moment.js"></script>
+<script src="assets/js/libs/bootstrap-datepicker.js"></script>
 <script src="assets/js/app.min.js"></script>
 <!-- endinjector -->
 

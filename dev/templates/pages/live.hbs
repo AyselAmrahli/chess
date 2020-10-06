@@ -1,0 +1,40 @@
+    {{#> layouts/default title="Videos" }}
+
+
+{{#*inline "body"}}
+
+
+
+    <!-- videos -->
+    <section class="section section-videos pb-4">
+
+        <!--- breadcrump --->
+        <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Live</li>
+                </ol>
+            </nav>
+        <!--- ./breadcrump --->
+
+        <div class="container-fluid px-0">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="stream-chess-game">
+                        <iframe
+                        src="https://dist.bambuser.net/player/?resourceUri=https%3A//cdn.bambuser.net/broadcasts/0b9860dd-359a-67c4-51d9-d87402770319%3Fda_signature_method%3DHMAC-SHA256%26da_id%3D9e1b1e83-657d-7c83-b8e7-0b782ac9543a%26da_timestamp%3D1482921565%26da_static%3D1%26da_ttl%3D0%26da_signature%3Dcacf92c6737bb60beb1ee1320ad85c0ae48b91f9c1fbcb3032f54d5cfedc7afe"
+                        style="border: none"
+                        allowfullscreen></iframe>
+
+                        <!--  (YOUR_RESOURCE_URI is your stream video link) src="https://dist.bambuser.net/player/?resourceUri=YOUR_RESOURCE_URI" -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ./videos -->
+
+{{/inline}}
+
+{{/layouts/default}}
