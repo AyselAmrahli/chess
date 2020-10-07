@@ -608,7 +608,7 @@ textarea {
 
         img {
             margin-right: 10px;
-            height: 18px;
+            height: 22px;
         }
         p {
             margin: 0;
@@ -630,15 +630,14 @@ textarea {
         border: 1px solid #b3b3b3;
         padding: 10px;
         margin-bottom: 30px;
-        cursor: pointer;
+        text-decoration: none;
+        display: block;
+
 
         @media screen and (min-width: 991px){
             height: 350px;
         }
-        a {
-            text-decoration: none;
-            display: block;
-        }
+
         img {
             width: 144px;
             height: 144px;
@@ -659,6 +658,8 @@ textarea {
                 font-size: 14px;
                 font-weight: 700;
                 margin-bottom: 3px;
+                display: block;
+                cursor: pointer;
 
                 span {
                     font-size: 13px;
@@ -675,7 +676,8 @@ textarea {
         padding-right: 30px;
         -webkit-appearance: none;
         -moz-appearance: none;
-        background-image: url(../img/icons/down-arrow.png);
+        background-image: url(../img/icons/down-arrow-gray.svg);
+        background-size: 18px;
         background-repeat: no-repeat;
         background-position: 95% 50%;
         color: #b3b3b3;
@@ -806,10 +808,10 @@ textarea {
 }
 
 .datepicker.form-control {
-    background-image: url(../img/icons/date.png);
+    background-image: url(../img/icons/date.svg);
     background-position: 95% 50%;
     background-repeat: no-repeat;
-    background-size: 18px;
+    background-size: 20px;
     padding-right: 30px;
     border-radius: 0;
     border-color: #b3b3b3;
@@ -824,7 +826,8 @@ x
 .section-gallery {
     .gallery-item {
         background-color: #303030;
-        background-image: url(../img/icons/folder.png);
+        background-image: url(../img/icons/folder.svg);
+        background-size: 50%;
         background-position: center;
         background-repeat: no-repeat;
         height: 165px;
