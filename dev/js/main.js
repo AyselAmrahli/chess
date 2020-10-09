@@ -3,6 +3,8 @@ $(document).ready(function(){
   var $fancy_box_video = $('.fancy-box-video');
   var $datepicker = $('.datepicker');
   var $gallery = $('.grouped_elements');
+  var $language = $('#language');
+  var $contactForm = $('#contactForm');
 
   // fancybox to video
   if($fancy_box_video.length){
@@ -17,12 +19,39 @@ $(document).ready(function(){
     });
   }
 
+
+
+  // contact form clear
+  if($contactForm.length) {
+    $('.clearForm').on('click', function(e) {
+      e.preventDefault()
+      $('#contactForm input').val('');
+      $('#contactForm textarea').val('');
+    })
+  }
+
+
+  // loading hide
+  $(window).on('load', function(){
+    $('.loading').hide();
+  })
+
+
+  // language select nice select
+  if($language.length) {
+    $language.niceSelect();
+  }
+
+
+  // datepicker
   if ($datepicker.length) {
     $('.datepicker').datepicker({
       format: 'mm.dd.yyyy',
     });
   }
 
+
+  // gallery
   if($gallery.length) {
     $gallery.fancybox();
 
@@ -39,6 +68,9 @@ $(document).ready(function(){
   })
 
 
+
+
+
     // footer map init function
   function initFooterMap(dataLat,dataLong) {
     var myLatLng = {lat: dataLat, lng: dataLong};
@@ -48,7 +80,7 @@ $(document).ready(function(){
       disableDefaultUI: true,
     });
 
-    var contentString = '<div class="d-flex align-items-center"><img src="assets/img/logo-footer.png" /><p>Azerbaycan Sahmat Federasiyasi</p></div>';
+    var contentString = '<div class="d-flex align-items-center"><img src="assets/img/logo-footer.svg" /><p>Azerbaycan Sahmat Federasiyasi</p></div>';
 
 
     var infowindow = new google.maps.InfoWindow({
@@ -78,7 +110,7 @@ $(document).ready(function(){
       disableDefaultUI: true,
     });
 
-    var contentString = '<div class="d-flex align-items-center"><img src="assets/img/logo-footer.png" /><p>Azerbaycan Sahmat Federasiyasi</p></div>';
+    var contentString = '<div class="d-flex align-items-center"><img src="assets/img/logo-footer.svg" /><p>Azerbaycan Sahmat Federasiyasi</p></div>';
 
 
     var infowindow = new google.maps.InfoWindow({
